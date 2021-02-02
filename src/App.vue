@@ -4,13 +4,20 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div> -->
-
+    <navbar></navbar>
     <router-view />
-
-    
   </div>
 </template>
 
+<script>
+import Vue from "vue";
+import navbar from "../src/components/navbar";
+export default Vue.extend({
+  components: {
+    navbar
+  }
+});
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
