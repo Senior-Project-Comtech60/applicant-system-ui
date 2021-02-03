@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
-import Home from "../views/Home.vue";
+import Index from "../views/Index.vue";
 import NotFoundPage from "../views/NotFoundPage.vue";
 import Mainpang from "../views/Mainpang.vue";
 Vue.use(VueRouter);
@@ -17,8 +17,8 @@ const routes: Array<RouteConfig> = [
   },
   {
     path: "/",
-    name: "Home",
-    component: Home,
+    name: "Index",
+    component: Index,
   },
   {
     path: "/about",
