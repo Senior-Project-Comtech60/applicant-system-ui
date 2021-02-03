@@ -6,18 +6,15 @@
     </div> -->
     <navbar></navbar>
     <router-view />
-    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Vue from "vue";
-import navbar from "../src/components/layout/navbar";
-import Footer from "../src/components/layout/Footer";
+import navbar from "../src/components/navbar";
 export default Vue.extend({
   components: {
-    navbar,
-    Footer
+    navbar
   }
 });
 </script>
