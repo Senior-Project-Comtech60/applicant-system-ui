@@ -14,11 +14,11 @@ export default Vue.extend({
       data1: [
         {
           id: "1",
-          name: "kuy",
+          name: "kuy"
         },
-        { id: "2", name: "hee" },
-      ],
+        { id: "2", name: "kuy" }
+      ]
     };
-  },
+  }
 });
 </script>
