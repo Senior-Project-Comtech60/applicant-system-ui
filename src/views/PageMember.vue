@@ -2,7 +2,6 @@
   <div>
     <div class="container-fluid bg-member">
       <div class=" container">
-    
         <div class="row my-5 ml-5">
           <div class="col-6" v-for="pageimg in pageimgs" :key="pageimg.id">
             <div class="row">
@@ -160,8 +159,7 @@ img {
 
   // position: absolute;
 }
-.bg-member{
-   background-color: #ffffff;
-
+.bg-member {
+  background-color: #ffffff;
 }
 </style>
