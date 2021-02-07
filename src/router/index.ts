@@ -3,6 +3,9 @@ import VueRouter, { RouteConfig } from "vue-router";
 import Index from "../views/Index.vue";
 import NotFoundPage from "../views/NotFoundPage.vue";
 import Mainpang from "../views/Mainpang.vue";
+import PageSearch from "../views/PageSearch.vue";
+import PageMember from "../views/PageMember.vue";
+import PageLogin from "../views/PageLogin.vue";
 Vue.use(VueRouter);
 const routes: Array<RouteConfig> = [
   {
@@ -11,9 +14,24 @@ const routes: Array<RouteConfig> = [
     component: NotFoundPage,
   },
   {
+    path: "/PageMember",
+    name: "PageMember",
+    component: PageMember,
+  },
+  {
+    path: "/PageLogin",
+    name: "PageLogin",
+    component: PageLogin,
+  },
+  {
     path: "/Mainpang",
     name: "Mainpang",
     component: Mainpang,
+  },
+  {
+    path: "/PageSearch",
+    name: "PageSearch",
+    component: PageSearch,
   },
   {
     path: "/",
@@ -34,7 +52,7 @@ const routes: Array<RouteConfig> = [
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes
+  routes,
 });
 
 export default router;

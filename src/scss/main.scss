@@ -5,3 +5,11 @@
 @import '~bootstrap/dist/css/bootstrap.css';
 @import '~bootstrap-vue/dist/bootstrap-vue.css';
 @import "~@fortawesome/fontawesome-free/css/all.css";
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: rgba(251,251,252,255);
+}
+code {
+     font-family: 'Kanit', sans-serif;
+}
