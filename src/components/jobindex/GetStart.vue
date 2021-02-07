@@ -2,8 +2,10 @@
   <div>
     <div class="img-bg text-center ma">
       <div class="overlay mg-bt">
-        <h1>หางานง่าย ๆ <code>คลิ๊ก</code> เลย JOBCT</h1>
-        <p>เพื่องานที่เหมาะสมกับคุณ</p>
+        <div class="mb-3">
+          <h1 class="txt-color">หางานง่าย ๆ <code>คลิ๊ก</code> เลย JOBCT</h1>
+        </div>
+        <div class="mb-5"><p>เพื่องานที่เหมาะสมกับคุณ</p></div>
         <router-link to="/PageSearch">
           <button type="button" class="btn btn-warnings btn-lg">
             Get start
@@ -37,16 +39,18 @@ export default Vue.extend({});
 .mg-bt {
   padding-top: 12rem;
   h1 {
-    font-size: 45px;
-    color: rgb(49, 48, 48);
+    font-size: 65px;
+    color: rgb(255, 255, 255);
   }
   p {
-    font-size: 18px;
+    font-size: 25px;
+    color: rgba(241, 241, 241, 0.876);
   }
 }
 code {
-  font-size: 45px;
-  color: rgb(254, 109, 67);
+  font-size: 65px;
+  color: #fd8e4e;
+  font-weight: bold;
 }
 .btn-warnings {
   color: rgb(253, 253, 253);

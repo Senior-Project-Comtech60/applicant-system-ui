@@ -5,6 +5,7 @@ import NotFoundPage from "../views/NotFoundPage.vue";
 import Mainpang from "../views/Mainpang.vue";
 import PageSearch from "../views/PageSearch.vue";
 import PageMember from "../views/PageMember.vue";
+import PageLogin from "../views/PageLogin.vue";
 Vue.use(VueRouter);
 const routes: Array<RouteConfig> = [
   {
@@ -16,6 +17,11 @@ const routes: Array<RouteConfig> = [
     path: "/PageMember",
     name: "PageMember",
     component: PageMember,
+  },
+  {
+    path: "/PageLogin",
+    name: "PageLogin",
+    component: PageLogin,
   },
   {
     path: "/Mainpang",

@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 "></div>
-        <div class="col-12 mt-4">
+        <div class="col-12 txt-mg">
           <h3>TOP COMPANIES</h3>
         </div>
         <div class="col-12">
@@ -13,6 +13,7 @@
         <div class="col-12 ">
           <Adrertise :adrertise="adrertise"></Adrertise>
         </div>
+        <div class="col-12"><Document></Document></div>
       </div>
     </div>
   </div>
@@ -22,11 +23,13 @@ import Vue from "vue";
 import TopCompanies from "../components/jobindex/TopCompanies.vue";
 import Adrertise from "../components/jobindex/Adrertise.vue";
 import GetStart from "../components/jobindex/GetStart.vue";
+import Document from "../components/jobindex/Document.vue";
 export default Vue.extend({
   components: {
     TopCompanies,
     Adrertise,
-    GetStart
+    GetStart,
+    Document
   },
   data() {
     const company = [
@@ -84,5 +87,9 @@ export default Vue.extend({
 .font-size-index-header {
   font-size: 24px;
   font-weight: 800;
+}
+.txt-mg {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
 }
 </style>

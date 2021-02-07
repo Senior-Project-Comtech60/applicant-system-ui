@@ -31,12 +31,12 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .card {
-  border-radius: 25px;
+  border-radius: 20px;
   box-shadow: 0px 4px 8px #84caf82a;
   border: 1px solid #e3eeee;
 }
 .card-img-top {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 </style>

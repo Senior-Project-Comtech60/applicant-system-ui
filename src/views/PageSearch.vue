@@ -98,71 +98,71 @@ export default Vue.extend({
       jobsearchs: [
         {
           id: "1",
-          url: "images/NewFuture.jpg",
-          company: "พรรคอนาคตใหม่",
+          url: "images/aia.jpg",
+          company: "บริษัทประกันภัยAIA",
           jobcompany: "เปิดรับสมัครหลายอัตรา",
           time: "10:30",
           options: {
-            province: "สุโขทัย",
-            salary: "10000000",
+            province: "กรุงเทพ ฯ",
+            salary: "10000",
             atwork: "บ้าน",
             interview: "ออลไลน์"
           }
         },
         {
           id: "2",
-          url: "images/NewFuture.jpg",
-          company: "พรรคอนาคตใหม่",
+          url: "images/sing.jpg",
+          company: "บริษัทสิงห์ คอร์เปอเรชั่น จํากัด",
           jobcompany: "เปิดรับสมัครหลายอัตรา",
           time: "10:30",
           options: {
-            province: "สุโขทัย",
-            salary: "10000",
+            province: "ปทุมธานี",
+            salary: "20000",
             atwork: "บ้าน",
             interview: "ออลไลน์"
           }
         },
         {
           id: "3",
-          url: "images/NewFuture.jpg",
-          company: "พรรคอนาคตใหม่",
+          url: "images/Makro.jpg",
+          company: "บริษัท สยามแม็คโคร จำกัด (มหาชน)",
           jobcompany: "เปิดรับสมัครหลายอัตรา",
           time: "10:30",
           options: {
-            province: "สุโขทัย",
-            salary: "10000",
+            province: "อุบลธานี",
+            salary: "30000",
             atwork: "บ้าน",
             interview: "ออลไลน์"
           }
         },
         {
-          id: "3",
-          url: "images/NewFuture.jpg",
-          company: "พรรคอนาคตใหม่",
+          id: "4",
+          url: "images/gold-foil-logo-mockup_160403-97.jpg",
+          company: "บริษัทโลโก จำกัด",
           jobcompany: "เปิดรับสมัครหลายอัตรา",
           time: "10:30",
           options: {
-            province: "สุโขทัย",
-            salary: "10000",
+            province: "กรุงเทพฯ",
+            salary: "40000",
             atwork: "บ้าน",
             interview: "ออลไลน์"
           }
         },
         {
-          id: "3",
-          url: "images/NewFuture.jpg",
-          company: "พรรคอนาคตใหม่",
+          id: "5",
+          url: "images/golden-elegant-logo-with-frame_52683-13462.jpg",
+          company: "เอมเดิลตี้ จำกัด",
           jobcompany: "เปิดรับสมัครหลายอัตรา",
           time: "10:30",
           options: {
             province: "สุโขทัย",
-            salary: "10000",
+            salary: "35000",
             atwork: "บ้าน",
             interview: "ออลไลน์"
           }
         },
         {
-          id: "3",
+          id: "6",
           url: "images/NewFuture.jpg",
           company: "พรรคอนาคตใหม่",
           jobcompany: "เปิดรับสมัครหลายอัตรา",
