@@ -4,14 +4,38 @@ import Index from "../views/Index.vue";
 import NotFoundPage from "../views/NotFoundPage.vue";
 import Mainpang from "../views/Mainpang.vue";
 import PageSearch from "../views/PageSearch.vue";
+import _id from "../views/pagecompany/_id.vue";
 import PageMember from "../views/PageMember.vue";
 import PageLogin from "../views/PageLogin.vue";
+import PageCompanyLG from "../views/Company/PageCompanyLG.vue";
+import PageF from "../views/PageUser/PageF.vue";
+import PageHTR from "../views/PageUser/PageHTR.vue";
 Vue.use(VueRouter);
 const routes: Array<RouteConfig> = [
   {
     path: "*",
     name: "NotFoundPage",
     component: NotFoundPage,
+  },
+  {
+    path: "/_id/:id",
+    name: "_id",
+    component: _id,
+  },
+  {
+    path: "/PageF",
+    name: "PageF",
+    component: PageF,
+  },
+  {
+    path: "/PageHTR",
+    name: "PageHTR",
+    component: PageHTR,
+  },
+  {
+    path: "/PageCompanyLG",
+    name: "PageCompanyLG",
+    component: PageCompanyLG,
   },
   {
     path: "/PageMember",

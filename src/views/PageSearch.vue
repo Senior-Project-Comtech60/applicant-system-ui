@@ -33,51 +33,58 @@
             v-for="jobsearch in jobsearchs"
             :key="jobsearch.id"
           >
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col text-left">{{ jobsearch.id }}</div>
-                    <div class="col text-right">{{ jobsearch.time }}</div>
-                  </div>
-                  <div class="row">
-                    <div class="col-9">
-                      <p>{{ jobsearch.company }}</p>
-                      <p>{{ jobsearch.jobcompany }}</p>
-                      <div class="row">
-                        <div class="col-9">
-                          <div class="row">
-                            <div class="col-md-7 col-12 mb-1">
-                              <i class="fas fa-search mr-3"></i
-                              >{{ jobsearch.options.province }}
-                            </div>
-                            <div class="col-md-5 col-12 mb-1">
-                              <i class="far fa-money-bill-alt mr-2"></i>
-                              {{ jobsearch.options.salary }}
-                            </div>
-                            <div class="col-md-7 col-12 mb-1 ">
-                              <i class="fas fa-home mr-2 "></i>
-                              {{ jobsearch.options.atwork }}
-                            </div>
-                            <div class="col-md-5  col-12 mb-1">
-                              <i class="fas fa-desktop mr-2"></i>
-                              {{ jobsearch.options.interview }}
+            <router-link
+              :to="{
+                name: '_id',
+                params: { id: jobsearch.id, company: jobsearchs }
+              }"
+            >
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col text-left">{{ jobsearch.id }}</div>
+                      <div class="col text-right">{{ jobsearch.time }}</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p>{{ jobsearch.company }}</p>
+                        <p>{{ jobsearch.jobcompany }}</p>
+                        <div class="row">
+                          <div class="col-9">
+                            <div class="row">
+                              <div class="col-md-7 col-12 mb-1">
+                                <i class="fas fa-search mr-3"></i
+                                >{{ jobsearch.options.province }}
+                              </div>
+                              <div class="col-md-5 col-12 mb-1">
+                                <i class="far fa-money-bill-alt mr-2"></i>
+                                {{ jobsearch.options.salary }}
+                              </div>
+                              <div class="col-md-7 col-12 mb-1 ">
+                                <i class="fas fa-home mr-2 "></i>
+                                {{ jobsearch.options.atwork }}
+                              </div>
+                              <div class="col-md-5  col-12 mb-1">
+                                <i class="fas fa-desktop mr-2"></i>
+                                {{ jobsearch.options.interview }}
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-md-3 col-12 make-a-claim-img ">
-                      <img
-                        :src="jobsearch.url"
-                        alt=""
-                        class="d-block mx-auto"
-                      />
+                      <div class="col-md-3 col-12 make-a-claim-img ">
+                        <img
+                          :src="jobsearch.url"
+                          alt=""
+                          class="d-block mx-auto"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </router-link>
           </div>
         </div>
       </div>

@@ -1,9 +1,14 @@
 <template>
   <div>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg  nav">
+    <nav class="navbar navbar-expand-lg  nav">
+      <div class="container">
         <router-link to="/">
-          <img src="images/Sign.svg" width="50" height="40" alt="" />
+          <img
+            src="@/assets/Sign_language_C.svg.png"
+            width="40"
+            height="40"
+            alt=""
+          />
         </router-link>
         <router-link to="/"><h2>JOBCT</h2></router-link>
         <button
@@ -34,20 +39,21 @@
           </ul>
           <router-link to="/PageLogin"
             ><img
-              src="images/user-5865.svg"
+              src="/images/user-5865.svg"
               width="35"
               height="35"
               alt=""
               title="Login"
           /></router-link>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </div>
 </template>
 <style lang="scss" scoped>
 nav {
   background-color: rga(251, 251, 252, 255);
+  box-shadow: 0px 4px 8px #00c2fdf3;
 }
 a {
   font-size: 20px;

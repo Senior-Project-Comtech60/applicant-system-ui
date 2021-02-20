@@ -2,13 +2,17 @@
   <div>
     <div class=" container">
       <div class="row custom-m ">
-        <div class="col-6">
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <h1>หางานได้ง่ายๆ JOBCT</h1>
-          <div class="pr-5 pt-5">
-            <img src="images/Enui.svg" alt="" class="d-block mx-auto" />
+          <div class="pr-5 pt-5 mb-5">
+            <img
+              src="images/undraw_Success_factors_re_ce93 (1).svg"
+              alt=""
+              class="d-block mx-auto"
+            />
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="row">
             <div class="col">
               <div class="card">
@@ -145,7 +149,7 @@ img {
   background-color: #ffffff;
 }
 .custom-m {
-  margin-top: 10rem;
+  margin-top: 6rem;
   margin-bottom: 10rem;
 }
 </style>

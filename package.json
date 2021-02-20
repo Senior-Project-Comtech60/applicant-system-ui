@@ -15,6 +15,7 @@
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.20.1",
     "core-js": "^3.6.5",
+    "heroku": "^7.47.13",
     "sweetalert2": "^10.12.6",
     "vue": "^2.6.12",
     "vue-class-component": "^7.2.3",

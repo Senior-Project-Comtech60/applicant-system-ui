@@ -3,12 +3,11 @@
     <GetStart></GetStart>
     <div class="container">
       <div class="row">
-        <div class="col-12 "></div>
         <div class="col-12 txt-mg">
           <h3>TOP COMPANIES</h3>
         </div>
         <div class="col-12">
-          <TopCompanies :company="company"></TopCompanies>
+          <TopCompanies class="mx-1" :company="company"></TopCompanies>
         </div>
         <div class="col-12 ">
           <Adrertise :adrertise="adrertise"></Adrertise>
@@ -20,7 +19,7 @@
 </template>
 <script lang="ts">
 import Vue from "vue";
-import TopCompanies from "../components/jobindex/TopCompanies.vue";
+import TopCompanies from "../components/jobindex/com.vue";
 import Adrertise from "../components/jobindex/Adrertise.vue";
 import GetStart from "../components/jobindex/GetStart.vue";
 import Document from "../components/jobindex/Document.vue";
