@@ -15,52 +15,52 @@ const routes: Array<RouteConfig> = [
   {
     path: "*",
     name: "NotFoundPage",
-    component: NotFoundPage,
+    component: NotFoundPage
   },
   {
-    path: "/_id/:id" ,
+    path: "/_id/:id",
     name: "_id",
-    component: _id,
+    component: _id
   },
   {
     path: "/PageF",
     name: "PageF",
-    component: PageF,
+    component: PageF
   },
   {
     path: "/PageHTR",
     name: "PageHTR",
-    component: PageHTR,
+    component: PageHTR
   },
   {
     path: "/PageCompanyLG",
     name: "PageCompanyLG",
-    component: PageCompanyLG,
+    component: PageCompanyLG
   },
   {
     path: "/PageMember",
     name: "PageMember",
-    component: PageMember,
+    component: PageMember
   },
   {
     path: "/PageLogin",
     name: "PageLogin",
-    component: PageLogin,
+    component: PageLogin
   },
   {
     path: "/Mainpang",
     name: "Mainpang",
-    component: Mainpang,
+    component: Mainpang
   },
   {
     path: "/PageSearch",
     name: "PageSearch",
-    component: PageSearch,
+    component: PageSearch
   },
   {
     path: "/",
     name: "Index",
-    component: Index,
+    component: Index
   },
   {
     path: "/about",
@@ -69,14 +69,14 @@ const routes: Array<RouteConfig> = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
-  },
+      import(/* webpackChunkName: "about" */ "../views/About.vue")
+  }
 ];
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes,
+  routes
 });
 
 export default router;

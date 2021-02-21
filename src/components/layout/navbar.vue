@@ -23,8 +23,15 @@
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
             <b-nav-item-dropdown text="Lang" right>
-              <b-dropdown-item>TH</b-dropdown-item>
-              <b-dropdown-item>EN</b-dropdown-item>
+              <b-dropdown-item @click="toggleSelectLanguage('th')"
+                >TH</b-dropdown-item
+              >
+              <b-dropdown-item @click="toggleSelectLanguage('en')"
+                >EN</b-dropdown-item
+              >
+              <b-dropdown-item @click="toggleSelectLanguage('de')"
+                >EN</b-dropdown-item
+              >
             </b-nav-item-dropdown>
 
             <b-nav-item-dropdown right>
@@ -45,7 +52,7 @@
               >
               <b-dropdown-item
                 ><router-link to="/"
-                  ><p>Sign Out</p></router-link
+                  ><p>{{ $t("global.signOut") }}</p></router-link
                 ></b-dropdown-item
               >
             </b-nav-item-dropdown>
@@ -57,8 +64,46 @@
 </template>
 <script>
 import Vue from "vue";
-// import { Locale, Language } from "@/locale/Locale";
-export default Vue.extend({});
+import { Locale, Language } from "@/locales/Locale";
+export default Vue.extend({
+  data() {
+    const language = Locale.currentLanguage;
+    return { language };
+  },
+  computed: {
+    selectedLanguage() {
+      const th =
+        this.language === "th"
+          ? "btn btn-sm btn-secondary"
+          : "btn btn-sm btn-light";
+      const en =
+        this.language === "en"
+          ? "btn btn-sm btn-secondary"
+          : "btn btn-sm btn-light";
+
+      return { th, en };
+    }
+  },
+  watch: {
+    language(value) {
+      Locale.currentLanguage = value;
+    }
+  },
+  methods: {
+    toggleSelectLanguage(lang) {
+      // this.isLanguage = lang;
+      if (lang === "th") {
+        this.language = Language.Thai;
+      }
+      if (lang === "en") {
+        this.language = Language.English;
+      }
+      if (lang === "de") {
+        this.language = Language.German;
+      }
+    },
+  },
+});
 </script>
 <style lang="scss" scoped>
 nav {

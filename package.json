@@ -3,15 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vue-cli-service serve",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint",
+    "deploy": "sh deploy.sh",
+    "dev": "vue-cli-service serve",
+    "lint:fix": "vue-cli-service lint --fix",
+    "test:coverage": "vue-cli-service test:unit -w 1 --coverage",
+    "test:watch": "vue-cli-service test:unit -w 1 --coverage --watch"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/vue-fontawesome": "2",
+    "moment": "^2.27.0",
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.20.1",
     "core-js": "^3.6.5",
@@ -19,6 +27,7 @@
     "sweetalert2": "^10.12.6",
     "vue": "^2.6.12",
     "vue-class-component": "^7.2.3",
+    "vue-i18n": "^8.22.4",
     "vue-property-decorator": "^8.4.2",
     "vue-router": "^3.2.0",
     "vue-slick-carousel": "^1.0.6",

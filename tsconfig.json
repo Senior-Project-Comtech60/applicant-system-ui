@@ -2,7 +2,8 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "strict": true,
+    "noImplicitAny": false,
+    "strict": false,
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
@@ -29,10 +30,16 @@
   },
   "include": [
     "src/**/*.ts",
-    "src/**/*.tsx",
+    "src/**/**/*.ts",
+    "src/**/**/**/.ts",
     "src/**/*.vue",
+    "src/**/**/*.vue",
+    "src/**/**/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.tsx",
+    "src/locales/messages.js",
+    "src/locales/Locale.ts",
+    "./*/*.js",
   ],
   "exclude": [
     "node_modules"

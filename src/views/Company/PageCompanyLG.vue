@@ -5,11 +5,12 @@
       <div class="row  ">
         <div class="col-xl-6 col-md-6 col-sm-12">
           <div class="">
-            <img
+            <!-- <img
               src="@/assets/images/2152021.svg"
               alt=""
               class="d-block mx-auto mb-4"
-            />
+            /> -->
+            <img src="" alt="" class="d-block mx-auto mb-4" />
           </div>
         </div>
         <div class="col-xl-6 col-md-6 col-sm-12 mb-5">
@@ -128,9 +129,9 @@ import Vue from "vue";
 export default Vue.extend({
   data() {
     return {
-      pageimgs: [{ id: "1", url: "images/aia.jpg" }]
+      pageimgs: [{ id: "1", url: "images/aia.jpg" }],
     };
-  }
+  },
 });
 </script>
 
