@@ -21,8 +21,8 @@
           </b-navbar-nav>
 
           <!-- Right aligned nav items -->
-          <b-navbar-nav class="ml-auto">
-            <b-nav-item-dropdown text="Lang" right>
+          <b-navbar-nav class="ml-auto my-auto">
+            <b-nav-item-dropdown :text="`${language}`" right>
               <b-dropdown-item @click="toggleSelectLanguage('th')"
                 >TH</b-dropdown-item
               >
@@ -30,7 +30,7 @@
                 >EN</b-dropdown-item
               >
               <b-dropdown-item @click="toggleSelectLanguage('de')"
-                >EN</b-dropdown-item
+                >DE</b-dropdown-item
               >
             </b-nav-item-dropdown>
 
@@ -82,12 +82,12 @@ export default Vue.extend({
           : "btn btn-sm btn-light";
 
       return { th, en };
-    }
+    },
   },
   watch: {
     language(value) {
       Locale.currentLanguage = value;
-    }
+    },
   },
   methods: {
     toggleSelectLanguage(lang) {
