@@ -23,14 +23,13 @@ export default Vue.extend({});
 
 <style lang="scss" scoped>
 .img-bg {
-  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   z-index: -1;
   width: 100%;
   height: 600px;
-  // background-image: url("E:/project-01/newjob-UI/public/images/590016.jpg");
+  background-image: url("/images/590016.jpg");
 }
 .overlay {
   background-color: rgba(0, 0, 0, 0.39);

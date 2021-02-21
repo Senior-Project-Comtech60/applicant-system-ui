@@ -21,8 +21,14 @@
           </b-navbar-nav>
 
           <!-- Right aligned nav items -->
-          <b-navbar-nav class="ml-auto my-auto">
-            <b-nav-item-dropdown :text="`${language}`" right>
+          <b-navbar-nav class="ml-auto">
+            <b-nav-item to="/" right>Home</b-nav-item>
+            <b-nav-item to="/PageSearch" right>Search Jobs</b-nav-item>
+            <b-nav-item-dropdown
+              class="font-sizez my-auto"
+              :text="`${language}`"
+              right
+            >
               <b-dropdown-item @click="toggleSelectLanguage('th')"
                 >TH</b-dropdown-item
               >
@@ -39,8 +45,8 @@
               <template #button-content>
                 <img
                   src="/images/user-5865.svg"
-                  width="35"
-                  height="35"
+                  width="20"
+                  height="20"
                   alt=""
                   title="Login"
                 />
@@ -113,6 +119,14 @@ nav {
 b-nav-item {
   color: black;
 }
+.font-sizez {
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+}
 b-navbar {
   position: fixed;
 }
@@ -120,7 +134,8 @@ b-navbar {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: rgb(226, 225, 225);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(131, 185, 202, 0.466) 0px 2px 8px 0px;
   z-index: 100;
   position: sticky;
 }
