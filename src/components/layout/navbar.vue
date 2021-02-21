@@ -82,12 +82,12 @@ export default Vue.extend({
           : "btn btn-sm btn-light";
 
       return { th, en };
-    },
+    }
   },
   watch: {
     language(value) {
       Locale.currentLanguage = value;
-    },
+    }
   },
   methods: {
     toggleSelectLanguage(lang) {
@@ -101,8 +101,8 @@ export default Vue.extend({
       if (lang === "de") {
         this.language = Language.German;
       }
-    },
-  },
+    }
+  }
 });
 </script>
 <style lang="scss" scoped>
