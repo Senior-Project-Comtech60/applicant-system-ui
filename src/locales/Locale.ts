@@ -4,7 +4,6 @@ import { languages } from "../locales/messages.js";
 export enum Language {
   English = 'en',
   Thai = 'th',
-  German = 'de',
 }
 
 export class Locale {

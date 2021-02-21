@@ -17,7 +17,7 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
-            <b-nav-item>JOBCT</b-nav-item>
+            <b-nav-item to="/">JOBCT</b-nav-item>
           </b-navbar-nav>
 
           <!-- Right aligned nav items -->
@@ -35,9 +35,6 @@
               <b-dropdown-item @click="toggleSelectLanguage('en')"
                 >EN</b-dropdown-item
               >
-              <b-dropdown-item @click="toggleSelectLanguage('de')"
-                >DE</b-dropdown-item
-              >
             </b-nav-item-dropdown>
 
             <b-nav-item-dropdown right>
@@ -53,7 +50,7 @@
               </template>
               <b-dropdown-item
                 ><router-link to="/PageLogin"
-                  ><p>Sign in</p></router-link
+                  ><p>{{ $t("global.signIn") }}</p></router-link
                 ></b-dropdown-item
               >
               <b-dropdown-item

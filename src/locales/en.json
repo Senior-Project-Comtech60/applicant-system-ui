@@ -1,5 +1,6 @@
 {
   "global": {
-    "signOut": "sign Out"
+    "signOut": "sign Out",
+    "signIn": "Sign in"
   }
 }
