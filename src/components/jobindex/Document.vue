@@ -2,14 +2,14 @@
   <div>
     <div class="coutiner">
       <div class="row">
-        <div class="col-xl-6 col-lg-6 col-sm-12 ">
+        <div class="col-xl-6 col-lg-6 col-sm-6 col-6">
           <img
             src="images/undraw_approve_qwp7.svg"
             alt=""
             class="d-block mx-auto"
           />
         </div>
-        <div class="col-xl-6 col-lg-6 col-sm-6 m-t">
+        <div class="col-xl-6 col-lg-6 col-sm-6 col-6 m-t">
           <div class="">
             <code> <h3>จัดการ ข้อมูลความเป็นส่วนตัว</h3></code>
             <p>
@@ -18,28 +18,28 @@
             </p>
           </div>
         </div>
-        <div class="col-xl-6 col-lg-6 col-sm-6 m-t">
+        <div class="col-xl-6 col-lg-6 col-sm-6 col-6 m-t">
           <code><h3>Apply Now สมัครงานด่วน เฉพาะสมาชิก Jobct</h3></code
           ><P
             >กดสมัครงานได้ง่ายเพียงปุ่ม สมัครงาน ด่วนและยังมีอีก 3 วิธี
             การสมัครงานให้เลือกใน Jobct
           </P>
         </div>
-        <div class="col-xl-6 col-lg-6 col-sm-6 ">
+        <div class="col-xl-6 col-lg-6 col-sm-6 col-6">
           <img
             src="images/undraw_Team_chat_re_vbq1.svg"
             alt=""
             class="d-block mx-auto"
           />
         </div>
-        <div class="col-xl-6 col-lg-6 col-sm-6 ">
+        <div class="col-xl-6 col-lg-6 col-sm-6 col-6 ">
           <img
             src="images/undraw_stand_out_1oag.svg"
             alt=""
             class="d-block mx-auto"
           />
         </div>
-        <div class="col-xl-6 col-lg-6 col-sm-6 m-t">
+        <div class="col-xl-6 col-lg-6 col-sm-6 col-6 m-t">
           <code><h3>MY JOBS แสดงข้อมูลการใช้งานของคุณ</h3></code>
           <p>
             ดูข้อมูลการใช้งานได้ทั้งประวัติการสมัครงาน งานที่สนใจ

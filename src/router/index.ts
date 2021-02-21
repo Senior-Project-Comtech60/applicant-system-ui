@@ -18,7 +18,7 @@ const routes: Array<RouteConfig> = [
     component: NotFoundPage,
   },
   {
-    path: "/_id/:id",
+    path: "/_id/:id" ,
     name: "_id",
     component: _id,
   },

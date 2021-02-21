@@ -2,9 +2,17 @@
   <div>
     <div class="m-1 mb-5">
       <div class="row ">
-        <div class="col-xl-3 col-lg-6 com-md-12  col-sm-3 col-12 my-2" v-for="companie in company" :key="companie.id">
+        <div
+          class="col-xl-3 col-lg-6 com-md-12  col-sm-6 col-12 my-2"
+          v-for="companie in company"
+          :key="companie.id"
+        >
           <div class="card card-deck mx-1">
-            <img  :src="companie.url" class="card-img-top grid-center p-4" alt="" />
+            <img
+              :src="companie.url"
+              class="card-img-top grid-center p-4"
+              alt=""
+            />
             <div class="card-body">
               <h5 class="card-title">{{ companie.title }}</h5>
               <p class="card-text">{{ companie.desc }}</p>
@@ -18,7 +26,6 @@
 
 <script>
 import Vue from "vue";
-
 export default Vue.extend({
   props: {
     company: {
@@ -38,7 +45,6 @@ export default Vue.extend({
 .card-img-top {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  
 }
 .grid-center {
   overflow: none;
