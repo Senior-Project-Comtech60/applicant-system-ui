@@ -2,16 +2,20 @@
   <div>
     <div class="container">
       <div>
-        <img src="/images/69223.jpeg" alt="" class="pt-fix mt-4" />
+        <img
+          :src="`/${$route.params.company.url}`"
+          alt=""
+          class=" mt-4 mx-auto "
+        />
       </div>
-      <h3 class="ml-3 mt-5 mb-5">{{ $route.params.companyname }}</h3>
+      <h3 class="ml-3 mt-5 mb-5">{{ $route.params.company.company }}</h3>
       <div class="bg-c">
         <div class="row">
           <div class="col-12">
-            <p class="text-right t">วันเวลา</p>
+            <p class="text-right t">{{ $route.params.company.time }}</p>
           </div>
           <div class="col-12">
-            <h3 class="ml-3">ชื่อบริษัทชื่อบริษัท</h3>
+            <h3 class="ml-3">{{ $route.params.company.company }}</h3>
           </div>
 
           <!-- <div class="col-12 ml-3"><h5><i class="fas fa-map-marker-alt mr-3 ml-3"></i>   สถาน์ที่สมัครงาน</h5>       <p>สถาน์ที่สมัครงาน</p></div>
@@ -27,7 +31,7 @@
             </p>
           </div>
           <div class="col-5">
-            <p>100</p>
+            <p>{{ $route.params.company.options.province }}</p>
           </div>
           <div class="col-7 ">
             <p>
@@ -36,7 +40,7 @@
             </p>
           </div>
           <div class="col-5">
-            <p>100</p>
+            <p>{{ $route.params.company.options.salary }}</p>
           </div>
           <div class="col-7">
             <p>
@@ -44,10 +48,12 @@
               อัตรา
             </p>
           </div>
-          <div class="col-5"><p class="tb">100</p></div>
+          <div class="col-5">
+            <p class="tb">{{ $route.params.company.options.rate }}</p>
+          </div>
           <div class="col-12  text-right">
             <button type="button" class="btn btn-warning btn-lg mr-3 mb-3">
-              Warning
+              สมัครงาน
             </button>
           </div>
         </div>
@@ -125,9 +131,9 @@ import Vue from "vue";
 export default Vue.extend({});
 </script>
 <style lang="scss" scoped>
-.pt-fix {
-  width: 100%;
-  height: 100%;
+img {
+  width: auto;
+  height: 200px;
 }
 .pt1-fix {
   position: absolute;
