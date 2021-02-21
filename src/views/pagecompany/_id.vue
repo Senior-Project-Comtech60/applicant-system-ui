@@ -3,7 +3,7 @@
     <div class="container">
       <div>
         <img
-          :src="`/${$route.params.company.url}`"
+          :src="`/${$route.params.company.seturl}`"
           alt=""
           class=" mt-4 mx-auto "
         />
@@ -61,26 +61,12 @@
       <div class="row">
         <div class="col-12 mt-4">
           <p>
-            ดูรายละเอียดงาน บริษัทจัดหางาน เจแม็กซ์ เป็นบริษัทในเครือ Max
-            support ประเทศญี่ปุ่น
-            ให้บริการสรรหาบุคลากรที่มีคุณภาพเพื่อให้มีประสิทธิภาพสูงสุดแก่บริษัท
-            เลขที่จดทะเบียนจัดหางานเลขที่ น.1136/2549
-          </p>
-        </div>
-        <div class="col-12 mt-4">
-          <p>
-            ดูรายละเอียดงาน บริษัทจัดหางาน เจแม็กซ์ เป็นบริษัทในเครือ Max
-            support ประเทศญี่ปุ่น
-            ให้บริการสรรหาบุคลากรที่มีคุณภาพเพื่อให้มีประสิทธิภาพสูงสุดแก่บริษัท
-            เลขที่จดทะเบียนจัดหางานเลขที่ น.1136/2549
+            {{ $route.params.company.options.paragrap }}
           </p>
         </div>
         <div class="col mb-3 mt-4">
           <p>
-            ดูรายละเอียดงาน บริษัทจัดหางาน เจแม็กซ์ เป็นบริษัทในเครือ Max
-            support ประเทศญี่ปุ่น
-            ให้บริการสรรหาบุคลากรที่มีคุณภาพเพื่อให้มีประสิทธิภาพสูงสุดแก่บริษัท
-            เลขที่จดทะเบียนจัดหางานเลขที่ น.1136/2549
+            {{ $route.params.company.options.padparagrap }}
           </p>
         </div>
       </div>
@@ -133,7 +119,7 @@ export default Vue.extend({});
 <style lang="scss" scoped>
 img {
   width: auto;
-  height: 200px;
+  height: 280px;
 }
 .pt1-fix {
   position: absolute;
