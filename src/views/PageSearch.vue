@@ -194,8 +194,7 @@ export default Vue.extend({
         },
         {
           id: "6",
-          url: "images/YP_LOGO2018-Y3.png",
-          seturl: "images/unnamed.png",
+          url: "images/yellowPages.png",
           company: "Yellow PAGES",
           jobcompany: "เปิดรับสมัครหลายอัตรา",
           time: "1.มก.64",
