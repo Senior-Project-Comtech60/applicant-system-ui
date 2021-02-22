@@ -3,9 +3,15 @@
     <div class="img-bg text-center ma">
       <div class="overlay mg-bt">
         <div class="mb-3">
-          <h1 class="txt-color">หางานง่าย ๆ <code>คลิ๊ก</code> เลย JOBCT</h1>
+          <h1 class="txt-color">
+            {{ $t("content.getStartBanner.simpleJob")
+            }}<code>{{ $t("content.getStartBanner.Click") }}</code>
+            {{ $t("content.getStartBanner.jobName") }}
+          </h1>
         </div>
-        <div class="mb-5"><p>เพื่องานที่เหมาะสมกับคุณ</p></div>
+        <div class="mb-5">
+          <p>{{ $t("content.getStartBanner.jobforyou") }}</p>
+        </div>
         <router-link to="/PageSearch">
           <button type="button" class="btn btn-warnings btn-lg">
             Get start

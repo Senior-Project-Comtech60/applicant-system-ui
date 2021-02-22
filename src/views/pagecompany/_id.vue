@@ -52,9 +52,13 @@
             <p class="tb">{{ $route.params.company.options.rate }}</p>
           </div>
           <div class="col-12  text-right">
-            <button type="button" class="btn btn-warning btn-lg mr-3 mb-3">
+            <router-link
+              to="#companyDetail"
+              type="button"
+              class="btn btn-warning btn-lg mr-3 mb-3"
+            >
               สมัครงาน
-            </button>
+            </router-link>
           </div>
         </div>
       </div>
@@ -104,7 +108,7 @@
           <i class="far fa-id-card"></i> ส่งอีเมล
         </button>
       </div>
-      <div>
+      <div id="companyDetail">
         <button type="button" class="btn btn-ct mb-5">
           <i class="far fa-id-card"></i> กรอกประวัติแบบย่อ
         </button>

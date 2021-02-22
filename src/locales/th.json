@@ -1,6 +1,42 @@
 {
   "global": {
     "signOut": "ออกจากระบบ",
-    "signIn": "สมัครสมาชิก"
-  }
+    "signIn": "สมัครสมาชิก",
+    "home": "หน้าหลัก",
+    "search":"ค้นหางาน"
+  },
+    "content": {
+      "getStartBanner": {
+        "simpleJob": "หางานง่าย ๆ",
+        "Click": "คลิ๊ก",
+        "jobName": "JOBCT",
+        "jobforyou":"เพื่องานที่เหมาะสมกับคุณ"
+       },
+      "paragrap":{
+        "paragrap1":"จัดการ ข้อมูลความเป็นส่วนตัว",
+        "paragrap2": "เลือกปิดหรือเปิดการแสดงข้อมูลบางส่วนในประวัติที่ฝากไว้ได้ เช่น เบอร์โทรศัพท์, ที่อยู่ หรืออีเมล",
+        "paragrap3": "Apply Now สมัครงานด่วน เฉพาะสมาชิก Jobct",
+        "paragrap4": "กดสมัครงานได้ง่ายเพียงปุ่ม สมัครงาน ด่วนและยังมีอีก 3 วิธี การสมัครงานให้เลือกใน Jobct",
+        "paragrap5": "MY JOBS แสดงข้อมูลการใช้งานของคุณ",
+        "paragrap6":"ดูข้อมูลการใช้งานได้ทั้งประวัติการสมัครงาน งานที่สนใจ และบริษัทที่เข้ามาดูประวัติ"
+      },
+       "companyindex":{
+        "companyindexpage":"เพื่องานที่เหมาะสมกับคุณ" 
+      },
+       "pagesearch":{
+        "pagesearchpath1":"สถาน์ที่คุณต้องการ",
+        "pagesearchpath2":"ประเภทงาน",
+        "pagesearchpath3":"คำที่คุณต้องการค้นหา"
+      },
+      "pagemember":{
+        "pagememberpath1":"หางานได้ง่ายๆ JOBCT",
+        "pagememberpath2":"สมัครสมาชิกสำหรับผู้สมัครงาน",
+        "pagemmeberpath3":"ชื่อ",
+        "pagememberpath4":"นามสกุล",
+        "pagememberpath5":"เลขบัตรประชาชน",
+        "pagememberpath6":"เบอร์โทรศัพย์",
+        "pagememberpath7":"รหัสผ่าน",
+        "pagememberpath8":"ยืนยันรหัสผ่าน"
+      }
+    }
 }

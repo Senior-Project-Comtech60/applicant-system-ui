@@ -11,18 +11,15 @@
         </div>
         <div class="col-xl-6 col-lg-6 col-sm-6 col-6 m-t">
           <div class="">
-            <code> <h3>จัดการ ข้อมูลความเป็นส่วนตัว</h3></code>
+            <code> <h3>{{ $t("content.paragrap.paragrap1") }}</h3></code>
             <p>
-              เลือกปิดหรือเปิดการแสดงข้อมูลบางส่วนในประวัติที่ฝากไว้ได้ เช่น
-              เบอร์โทรศัพท์, ที่อยู่ หรืออีเมล
+              {{ $t("content.paragrap.paragrap2") }}
             </p>
           </div>
         </div>
         <div class="col-xl-6 col-lg-6 col-sm-6 col-6 m-t">
-          <code><h3>Apply Now สมัครงานด่วน เฉพาะสมาชิก Jobct</h3></code
-          ><P
-            >กดสมัครงานได้ง่ายเพียงปุ่ม สมัครงาน ด่วนและยังมีอีก 3 วิธี
-            การสมัครงานให้เลือกใน Jobct
+          <code><h3> {{ $t("content.paragrap.paragrap3") }}</h3></code
+          ><P> {{ $t("content.paragrap.paragrap3") }}
           </P>
         </div>
         <div class="col-xl-6 col-lg-6 col-sm-6 col-6">
@@ -40,10 +37,9 @@
           />
         </div>
         <div class="col-xl-6 col-lg-6 col-sm-6 col-6 m-t">
-          <code><h3>MY JOBS แสดงข้อมูลการใช้งานของคุณ</h3></code>
+          <code><h3> {{ $t("content.paragrap.paragrap3") }}</h3></code>
           <p>
-            ดูข้อมูลการใช้งานได้ทั้งประวัติการสมัครงาน งานที่สนใจ
-            และบริษัทที่เข้ามาดูประวัติ
+          {{ $t("content.paragrap.paragrap4") }}
           </p>
         </div>
       </div>

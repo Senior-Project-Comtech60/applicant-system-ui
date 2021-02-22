@@ -3,7 +3,7 @@
     <div class=" container">
       <div class="row custom-m ">
         <div class="col-lg-6 col-md-6 col-sm-12">
-          <h1>หางานได้ง่ายๆ JOBCT</h1>
+          <h1>{{ $t("content.pagemember.pagememberpath1")}}</h1>
           <div class="pr-5 pt-5 mb-5">
             <img
               src="images/undraw_Success_factors_re_ce93 (1).svg"
@@ -18,7 +18,7 @@
               <div class="card">
                 <div class="card-body text-center p-5">
                   <h2 class="text-left  mb-4">
-                    สมัครสมาชิกสำหรับผู้สมัครงาน
+                    {{ $t("content.pagemember.pagememberpath2")}}
                   </h2>
                   <div class="form-group">
                     <input
@@ -101,7 +101,7 @@
                   </div>
                   <div class="text-lift text-center">
                     เป็นสมาชิคอยู่แล้ว ?
-                    <router-link to="/PageLogin"> เข้าสู่ระบบ</router-link>
+                    <router-link to="/PageLogin"> {{ $t("global.signIn") }}</router-link>
                   </div>
                 </div>
               </div>

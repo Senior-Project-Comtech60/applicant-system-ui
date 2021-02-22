@@ -15,7 +15,9 @@
             />
             <div class="card-body">
               <h5 class="card-title">{{ companie.title }}</h5>
-              <p class="card-text">{{ companie.desc }}</p>
+              <p class="card-text">
+                {{ $i18n.locale === "en" ? companie.desc.en: companie.desc.th }}
+              </p>
             </div>
           </div>
         </div>
@@ -30,9 +32,9 @@ export default Vue.extend({
   props: {
     company: {
       type: [Array],
-      return: {}
-    }
-  }
+      return: {},
+    },
+  },
 });
 </script>
 

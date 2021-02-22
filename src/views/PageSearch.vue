@@ -5,7 +5,9 @@
         <div class="col-md-4 col-12 mt-4">
           <div class="card">
             <div class="card-body">
-              <div class="title mb-1">สถาน์ที่คุณต้องการ</div>
+              <div class="title mb-1">
+                {{ $t("content.pagesearch.pagesearchpath1") }}
+              </div>
               <div>
                 <b-form-input list="my-list-id"></b-form-input>
 
@@ -13,7 +15,9 @@
                   <option v-for="size in sizes" :key="size"> {{ size }}</option>
                 </datalist>
               </div>
-              <div class="title mb-1">ประเภทงาน</div>
+              <div class="title mb-1">
+                {{ $t("content.pagesearch.pagesearchpath2") }}
+              </div>
               <div>
                 <b-form-input list="my-list-id2"></b-form-input>
 
@@ -23,7 +27,9 @@
                   </option>
                 </datalist>
               </div>
-              <div class="title mt-2">คำที่คุณต้องการค้นหา</div>
+              <div class="title mt-2">
+                {{ $t("content.pagesearch.pagesearchpath3") }}
+              </div>
             </div>
           </div>
         </div>
@@ -204,8 +210,8 @@ export default Vue.extend({
           }
         }
       ],
-      sizes: ["Small", "Medium", "Large", "Extra Large", "din"],
-      test: ["din", "shell", "oat", "nui", "tew"]
+      sizes: ["กำลังอยู่ในช่วงทดสอบ"],
+      test: ["กำลังอยู่ในช่วงทดสอบ"]
     };
   },
   methods: {

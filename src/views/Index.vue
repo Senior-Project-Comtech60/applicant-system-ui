@@ -28,7 +28,7 @@ export default Vue.extend({
     TopCompanies,
     Adrertise,
     GetStart,
-    Document
+    Document,
   },
   data() {
     const company = [
@@ -36,42 +36,54 @@ export default Vue.extend({
         id: "1",
         url: "images/NewFuture.jpg",
         title: "พรรคอนาคตใหม่",
-        desc: "เปิดรับสมัครหลายอัตรา"
+        desc: {
+          en: "For the job that suits you",
+          th: "เพื่องานที่เหมาะสมกับคุณ",
+        },
       },
       {
         id: "2",
         url: "images/Aia.jpg",
         title: "บริษัทเอไอเอประกันภัย",
-        desc: "เปิดรับสมัครหลายอัตรา"
+        desc: {
+          en: "For the job that suits you",
+          th: "เพื่องานที่เหมาะสมกับคุณ",
+        },
       },
       {
         id: "3",
         url: "images/Sing.jpg",
         title: "บริษัทน้ำสิง",
-        desc: "เปิดรับสมัครหลายอัตรา"
+        desc: {
+          en: "For the job that suits you",
+          th: "เพื่องานที่เหมาะสมกับคุณ",
+        },
       },
       {
         id: "4",
         url: "images/Makro.jpg",
         title: "บริษัทแม็คโคร จำกัด",
-        desc: "เปิดรับสมัครหลายอัตรา"
-      }
+        desc: {
+          en: "For the job that suits you",
+          th: "เพื่องานที่เหมาะสมกับคุณ",
+        },
+      },
     ];
     const adrertise = [
       {
         id: "1",
-        url: "images/275953.jpeg"
+        url: "images/275953.jpeg",
       },
       {
         id: "2",
-        url: "images/69223.jpeg"
-      }
+        url: "images/69223.jpeg",
+      },
     ];
     return {
       company,
-      adrertise
+      adrertise,
     };
-  }
+  },
 });
 </script>
 <style lang="scss" scoped>

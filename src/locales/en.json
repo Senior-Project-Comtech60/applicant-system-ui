@@ -1,6 +1,42 @@
 {
   "global": {
     "signOut": "sign Out",
-    "signIn": "Sign in"
-  }
+    "signIn": "Sign in",
+    "home": "Home",
+    "search":"search Jobs"
+  },
+      "content": {
+      "getStartBanner": {
+        "simpleJob": "Easy Job find ",
+        "Click": "Just Click",
+        "jobName": "JOBCT",
+        "jobforyou": "For the job that suits you"      
+      },
+        "paragrap":{
+        "paragrap1":"Manage privacy information",
+        "paragrap2": "You can choose to turn off or on some of the information in your saved history, such as phone numbers, addresses, or e-mails.",
+        "paragrap3": "Apply Now Urgently Apply For Jobct Members",
+        "paragrap4": "Easily apply for jobs, press apply quickly and there are 3 other job application methods to choose from in Jobct.",
+        "paragrap5": "MY JOBS shows your usage information",
+        "paragrap6":"You can view usage information, including job application history, interested jobs, and companies that visited history"
+      },
+      "companyindex":{
+        "companyindexpage":"For the job that suits you" 
+      },
+      "pagesearch":{
+        "pagesearchpath1":"Place you want",
+        "pagesearchpath2":"Manu of work",
+        "pagesearchpath3":"The words you want to find"
+      },
+      "pagemember":{
+        "pagememberpath1":"Easy to find jobs JOBCT",
+        "pagememberpath2":"Apply for job applicants",
+        "pagemmeberpath3":"Name",
+        "pagememberpath4":"last name",
+        "pagememberpath5":"ID",
+        "pagememberpath6":"Number",
+        "pagememberpath7":"Password",
+        "pagememberpath8":"Password again"
+      }
+    }
 }

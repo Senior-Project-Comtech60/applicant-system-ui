@@ -22,8 +22,8 @@
 
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
-            <b-nav-item to="/" right>Home</b-nav-item>
-            <b-nav-item to="/PageSearch" right>Search Jobs</b-nav-item>
+            <b-nav-item to="/" right>{{ $t("global.home") }}</b-nav-item>
+            <b-nav-item to="/PageSearch" right>{{ $t("global.search") }}</b-nav-item>
             <b-nav-item-dropdown
               class="font-sizez my-auto"
               :text="`${language}`"
