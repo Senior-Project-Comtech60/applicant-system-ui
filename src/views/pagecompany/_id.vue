@@ -3,19 +3,31 @@
     <div class="container">
       <div>
         <img
-          :src="`/${$route.params.company.seturl}`"
+          :src="`/${$route.params.company.url}`"
           alt=""
           class=" mt-4 mx-auto "
         />
+        <h3 class="ml-3 mt-5 mb-5">
+          {{
+            $i18n.locale === "th"
+              ? $route.params.company.company.nameTh
+              : $route.params.company.company.nameEn
+          }}
+        </h3>
       </div>
-      <h3 class="ml-3 mt-5 mb-5">{{ $route.params.company.company }}</h3>
       <div class="bg-c">
         <div class="row">
           <div class="col-12">
             <p class="text-right t">{{ $route.params.company.time }}</p>
           </div>
           <div class="col-12">
-            <h3 class="ml-3">{{ $route.params.company.company }}</h3>
+            <h3 class="ml-3">
+              {{
+                $i18n.locale === "th"
+                  ? $route.params.company.company.nameTh
+                  : $route.params.company.company.nameEn
+              }}
+            </h3>
           </div>
 
           <!-- <div class="col-12 ml-3"><h5><i class="fas fa-map-marker-alt mr-3 ml-3"></i>   สถาน์ที่สมัครงาน</h5>       <p>สถาน์ที่สมัครงาน</p></div>
@@ -31,7 +43,13 @@
             </p>
           </div>
           <div class="col-5">
-            <p>{{ $route.params.company.options.province }}</p>
+            <p>
+              {{
+                $i18n.locale === "th"
+                  ? $route.params.company.options.province.provinceTh
+                  : $route.params.company.options.province.provinceEn
+              }}
+            </p>
           </div>
           <div class="col-7 ">
             <p>
@@ -74,25 +92,7 @@
           </p>
         </div>
       </div>
-      <div class="">
-        <h4>สวัสดิการ</h4>
-        <li>ประกันสังคม</li>
-      </div>
-      <div class="mt-4 ">
-        <h4>ติดต่อเรา</h4>
-        <p>ฝ่ายบุคคล</p>
-        <p>
-          JMAX RECRUITMENT Co.,Ltd. 50 GMM Grammy Place, Unit 1306, Sukhumvit 21
-          Rd. (Asoke)
-        </p>
-        <p>
-          แขวงคลองเตยเหนือ เขตวัฒนา กรุงเทพมหานคร 10110 โทรศัพท์ : 02-262-0763-5
-          แฟกซ์ : 02-262-0766
-        </p>
-        <p>เว็บไซต์ : http://www.jmax.co.th</p>
-      </div>
-      <div class="mb-4 "></div>
-      <h4>วิธีสมัครงาน</h4>
+      <div class="" v-html="`${$route.params.company.options.content}`"></div>
       <div>
         <button type="button" class="btn btn-ct ">
           <i class="far fa-id-card"></i> สมัครงานด่วน
