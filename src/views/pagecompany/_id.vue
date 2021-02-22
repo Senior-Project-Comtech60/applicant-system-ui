@@ -1,14 +1,20 @@
 <template>
   <div>
     <div class="container">
-      <div>
+     <div class="row">
+       <div class="col my-auto">
+      <h3 class="ml-3 mt-5 mb-5">{{ $route.params.company.company }}</h3>
+      </div>
+      <div class="col text-right">
+         <div>
         <img
-          :src="`/${$route.params.company.seturl}`"
+          :src="`/${$route.params.company.url}`"
           alt=""
-          class=" mt-4 mx-auto "
+          class=" my-4"
         />
       </div>
-      <h3 class="ml-3 mt-5 mb-5">{{ $route.params.company.company }}</h3>
+        </div>
+      </div>
       <div class="bg-c">
         <div class="row">
           <div class="col-12">
@@ -167,5 +173,10 @@ img {
     color: #fff;
     background-color: rgb(246, 70, 70);
   }
+}
+img {
+  height:100px;
+  max-width:100px;
+  width:100%;
 }
 </style>
