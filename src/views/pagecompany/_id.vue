@@ -14,13 +14,6 @@
         <div class="col text-right">
           <div>
             <img :src="`/${$route.params.company.url}`" alt="" class=" my-4" />
-            <h3 class="ml-3 mt-5 mb-5">
-              {{
-                $i18n.locale === "th"
-                  ? $route.params.company.company.nameTh
-                  : $route.params.company.company.nameEn
-              }}
-            </h3>
           </div>
         </div>
       </div>
