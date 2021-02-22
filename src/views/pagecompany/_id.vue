@@ -1,19 +1,28 @@
 <template>
   <div>
     <div class="container">
-      <div>
-        <img
-          :src="`/${$route.params.company.url}`"
-          alt=""
-          class=" mt-4 mx-auto "
-        />
-        <h3 class="ml-3 mt-5 mb-5">
-          {{
-            $i18n.locale === "th"
-              ? $route.params.company.company.nameTh
-              : $route.params.company.company.nameEn
-          }}
-        </h3>
+      <div class="row">
+        <div class="col my-auto">
+          <h3 class="ml-3 mt-5 mb-5">
+            {{
+              $i18n.locale === "th"
+                ? $route.params.company.company.nameTh
+                : $route.params.company.company.nameEn
+            }}
+          </h3>
+        </div>
+        <div class="col text-right">
+          <div>
+            <img :src="`/${$route.params.company.url}`" alt="" class=" my-4" />
+            <h3 class="ml-3 mt-5 mb-5">
+              {{
+                $i18n.locale === "th"
+                  ? $route.params.company.company.nameTh
+                  : $route.params.company.company.nameEn
+              }}
+            </h3>
+          </div>
+        </div>
       </div>
       <div class="bg-c">
         <div class="row">
@@ -167,5 +176,10 @@ img {
     color: #fff;
     background-color: rgb(246, 70, 70);
   }
+}
+img {
+  height: 100px;
+  max-width: 100px;
+  width: 100%;
 }
 </style>
