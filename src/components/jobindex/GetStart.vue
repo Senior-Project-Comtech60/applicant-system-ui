@@ -35,7 +35,7 @@ export default Vue.extend({});
   z-index: -1;
   width: 100%;
   height: 600px;
-  background-image: url("/images/590016.jpg");
+  background-image: url("/images/69224.jpg");
 }
 .overlay {
   background-color: rgba(0, 0, 0, 0.39);
